@@ -1,6 +1,6 @@
 const randomNumbers = (max, min) => {
-    let random = Math.floor(Math.random() * (max - min + 1) + min);
-    return random;
+  let random = Math.floor(Math.random() * (max - min + 1) + min);
+  return random;
 };
 
 /* 2. Ejercicio
@@ -19,11 +19,28 @@ en cuenta los siguientes rangos:
 Los saludos deberán estar predefinidos en un objeto 
 con el identificador “greeting”. */
 
-const a3e7 = () => {
-
-
-
-}
+const a3e2 = () => {
+  /* esto nos da la hora del sistema */
+  let systemTime = new Date();
+  let hour = systemTime.getHours();
+  /* Pedimos el nombre al usuario */
+  let userName = prompt("What's your name?");
+  /* los saludos predefinidos */
+  const greeting = {
+    morning: "Good Morning",
+    afternoon: "Good Afternoon",
+    evening: "Good Evening",
+  };
+  /* los if con los horarios y saludo correspondiente */
+  if (hour >= 5 && hour <= 11) {
+    alert(`${greeting.morning}, ${userName}!`);
+  } else if (hour >= 12 && hour <= 17) {
+    alert(`${greeting.afternoon}, ${userName}!`);
+  } else {
+    alert(`${greeting.evening}, ${userName}!`);
+  }
+};
+console.log(a3e2());
 
 /* 7. Ejercicio
 Escribe un programa que genera 100 números aleatorios, 
@@ -32,7 +49,20 @@ A continuación filtra todos los números impares,
 ordenando los pares de mayor a menor. */
 
 const a3e7 = () => {
+  let numerosAleatorios = [];
+  for (let i = 0; i < 100; i++) {
+    let numAleatorio = randomNumbers(500, 0);
+    numerosAleatorios.push(numAleatorio);
+  }
+  console.log(numerosAleatorios);
 
+  let pares = numerosAleatorios.filter(function (num) {
+    return num % 2 == 0;
+  });
+  console.log(pares);
 
+  let orden = pares.sort((a, b) => b - a);
 
-}
+  console.log(orden);
+};
+/* console.log(a3e7()); */

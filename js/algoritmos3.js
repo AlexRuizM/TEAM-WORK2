@@ -67,9 +67,152 @@ const e1a3 = () => {
 
 
 
+//Ejercicio 6  algoritmos 3//
+
+const e6a3 =() =>{
+
+//Pongo una variable que que se llama frases y dentro hay un array con todas las frases de canciones famosas//
+  let frases = [
+
+    "Yesterday, all my troubles seemed so far away",
+
+    "Don't stop believin', hold on to that feelin'",
+
+    "I will always love you",
+
+    "Like a virgin, touched for the very first time",
+
+    "I wanna dance with somebody, I wanna feel the heat with somebody",
+
+    "I'm a survivor, I'm not gon' give up",
+
+    "I want to hold your hand",
+
+    "We will rock you",
+
+    "Every breath you take, every move you make, I'll be watching you",
+
+    "I'm a genie in a bottle, you gotta rub me the right way",
+
+    "What a wonderful world",
+
+    "I will survive, hey hey",
+
+    "I can't help falling in love with you",
+
+    "All you need is love",
+
+    "I don't want to miss a thing",
+
+    "Cause baby you're a firework, come on show 'em what you're worth" ,
+
+    "My heart will go on and on" ,
+
+    "Eve ry time we touch, I get this feeling" ,
+
+    "It's the eye of the tiger, it's the thrill of the fight" ,
+
+    "I believe I can fly",
+  ];
+
+//Hago una funcion que se llama randomnumber que tiene dos parametros (max, min) que me da un numero aleatorio dentro de max, min//
+const randomNumber = (max, min) => 
+//Pongo Math.floor(Math.random() * (max - min +1)) + min; para que me pueda dar una frase aleatori dentro de las que hay en el array //
+Math.floor(Math.random() * (max - min +1)) + min;
+
+//Hago dos variables para especificar que la variable unSegundo sea = 1000, y la variable minuto sea = unSegundo * 60//
+
+let unSegundo = 1000;
+let minuto = unSegundo * 60;
+
+let id = setInterval(() => {
+  //Hago la variable id que tiene dentro setInterval //
+  //El console.log me especifica con el setInterval(que es para comenzar) que quiero sacar de la variable frases una frase random que hay dentro del array//
+  console.log(frases[randomNumber(frases.length -1, 0)]);
+  //con unSegundo * 10) especifico que como un seg es igual a 1000 quiero que  unSegundo se multiplique por 10 para que se genere una frase aleatoria cada 10seg//
+}, unSegundo * 10);
+//Con setTimeout le digo que quiero que termine de darme frases aleatorias //
+setTimeout(() => {
+  clearInterval(id);
+}, minuto * 2);
+
+
+
+}
+e6a3();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //Ejercico 6 algoritmos 3//
 
-  const e6a3 = () => {
+ /* const e6a3 = () => {
 
 //Aqui pongo la variable vinos donde dentro hay un array y 20 tipos de vinos con los platos adecuados para acompañar//
 
@@ -197,5 +340,4 @@ setTimeout(() => clearInterval(interval), 120000);
 
  
  };
-  e6a3();
-
+  e6a3();*/

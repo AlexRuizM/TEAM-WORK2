@@ -1,43 +1,30 @@
 const e1a1 = () => {
-  let month = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  let actualDate = new Date();
-  let actualMonth = month[actualDate.getMonth()];
-  console.log(`Currently month is ${actualMonth}`);
 
-  let month31days = [
-    "January",
-    "March",
-    "May",
-    "July",
-    "August",
-    "October",
-    "December",
-  ];
-  let month30days = ["April", "June", "September", "November"];
+    let month = new Date(Date.now()).toLocaleString("en", { month: "long" });
+    console.log(month);
 
-  if (month31days.includes(actualMonth)) {
-    console.log(`${actualMonth} has 31 days`);
-  } else if (month30days.includes(actualMonth)) {
-    console.log(`${actualMonth} has 30 days`);
-  } else if (actualMonth == "February") {
-    console.log(`${actualMonth} has 28 days`);
-  } else {
-    console.log("error");
-  }
-};
+    switch (month) {
+        case "January":
+        case "March":
+        case "May":
+        case "July":
+        case "August":
+        case "October":
+        case "December":
+            console.log(`${month} has 31 days`);    
+            break;
+        case "April":
+        case "June":
+        case "September":
+        case "November":
+            console.log(`${month} has 30 days`);  
+            break;
+        default:
+            console.log("February has 28 days");
+            break;
+    }
+
+}
 
 
 const e6a1 = () => {

@@ -54,7 +54,7 @@ const e1a3 = () => {
     
     //Pongo dentro de console.log (`min value: ${minValue}`) y (`max value: ${maxValue}`) para que salga en la consola en numero más pequeño y más grande //
 
-    console.log("Aqui te dejo el valor minimo y maximo de los numero que has eleguido :");
+    console.log("Aqui te dejo el valor minimo y maximo de los numero que has elegido :");
 
     console.log(`min value: ${minValue}`);
 
@@ -62,7 +62,7 @@ const e1a3 = () => {
    
   };
   
-  e1a3();
+ // e1a3();
 
 
 
@@ -139,71 +139,8 @@ setTimeout(() => {
 
 
 }
-e6a3();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//e6a3();
 
 
 

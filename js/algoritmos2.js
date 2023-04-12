@@ -4,7 +4,7 @@ e2a2 = () => {
 
   // he creado una función con mi código que convierte una frase
   // en un array, invierte el orden de las letras y las vuelve a
-  // convertir en un string sin comas separando los elementos.
+  // convertir en un string, sin comas separando los elementos.
 
   function letterReverse() {
     let arrayQuote = Array.from(quote);
@@ -19,6 +19,7 @@ e2a2 = () => {
 
   letterReverse();
 };
+
 
 e7a2 = () => {
   let max = 10;

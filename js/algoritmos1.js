@@ -50,16 +50,16 @@ let franco = cantidad * 0.979;
 
 switch (moneda) {
   case "Dólar americano":
-    console.log(cantidad, `euros equivalen a `, dolar, ` francos suizos`);
+    console.log(cantidad, `euros equivalen a `, dolar, ` dólares americanos.`);
     break;
   case "Yen japonés":
-    console.log(cantidad, `euros equivalen a `, yen, ` yen japoneses`);
+    console.log(cantidad, `euros equivalen a `, yen, ` yen japoneses.`);
     break;
   case "Libra esterlina":
-    console.log(cantidad, `euros equivalen a `, libra, ` libras esterlinas`);
+    console.log(cantidad, `euros equivalen a `, libra, ` libras esterlinas.`);
     break;
   case "Franco suizo":
-    console.log(cantidad, `euros equivalen a `, franco, ` francos suizos`);
+    console.log(cantidad, `euros equivalen a `, franco, ` francos suizos.`);
     break;
 
   default:

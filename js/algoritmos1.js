@@ -1,31 +1,28 @@
 const e1a1 = () => {
+  let month = new Date(Date.now()).toLocaleString("en", { month: "long" });
+  console.log(month);
 
-    let month = new Date(Date.now()).toLocaleString("en", { month: "long" });
-    console.log(month);
-
-    switch (month) {
-        case "January":
-        case "March":
-        case "May":
-        case "July":
-        case "August":
-        case "October":
-        case "December":
-            console.log(`${month} has 31 days`);    
-            break;
-        case "April":
-        case "June":
-        case "September":
-        case "November":
-            console.log(`${month} has 30 days`);  
-            break;
-        default:
-            console.log("February has 28 days");
-            break;
-    }
-
-}
-
+  switch (month) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+      console.log(`${month} has 31 days`);
+      break;
+    case "April":
+    case "June":
+    case "September":
+    case "November":
+      console.log(`${month} has 30 days`);
+      break;
+    default:
+      console.log("February has 28 days");
+      break;
+  }
+};
 
 const e6a1 = () => {
   let email = "tolkien@lordofrings.com";
@@ -39,4 +36,3 @@ const e6a1 = () => {
     console.log("Wrong password or email");
   }
 };
-

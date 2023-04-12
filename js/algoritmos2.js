@@ -8,7 +8,7 @@ const e1a2 = () => {
   console.log(Array.from(word));
 };
 
-const e5a2 = () => {
+const e6a2 = () => {
   const all = () => {
     console.log("Welcome to text statistics program");
     let phrase = prompt("Write here your sentence");
@@ -56,12 +56,10 @@ const e5a2 = () => {
 
       return longest;
     }
-    
+
     let longest = findLongestWord();
     console.log(`Longest Word: ${longest}`);
   };
 
   all();
 };
-
-

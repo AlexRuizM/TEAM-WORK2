@@ -41,6 +41,20 @@ const a3e2 = () => {
   }
 };
 console.log(a3e2());
+/* 3. Ejercicio 
+*/
+
+const a3e3 = () => {
+  for (let index = 0; index < 10; index++) {
+    let color = /^[0-9A-Z]{6}$/g;
+    
+  }
+  
+  
+  
+};
+console.log(a3e3());
+
 
 /* 7. Ejercicio
 Escribe un programa que genera 100 números aleatorios, 

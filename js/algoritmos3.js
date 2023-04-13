@@ -23,6 +23,28 @@ const e3a3 = () => {
   console.log("%cHello World!", "color: " + randomCodeSelector);
 };
 
+const a5e3 = () => {
+  let userQuestion = parseInt(prompt("¿Cuántas matrículas quieres generar?"));
+  for (let i = 0; i < userQuestion; i++) {
+    let randomNumber = Math.floor(Math.random() * 10000);
+    let numberGenerator = randomNumber.toString().padStart(4, "0");
+    function letterGenerator() {
+      let letterGenerated = "";
+      let characters = "BCDFGHJKLMNPRSTVWXYZ";
+      let charactersLength = characters.length;
+      let counter = 0;
+      while (counter < 3) {
+        letterGenerated += characters.charAt(
+          Math.floor(Math.random() * charactersLength)
+        );
+        counter++;
+      }
+      return letterGenerated;
+    }
+    console.log(numberGenerator + letterGenerator());
+  }
+};
+
 const e8a3 = () => {
   function generateMoves() {
     let suits = ["clubs", "hearts", "spades", "diamonds"];

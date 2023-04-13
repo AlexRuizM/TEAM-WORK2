@@ -1,3 +1,8 @@
+/*const randomNumbers = (max, min) => {
+    let random = Math.floor(Math.random() * (max - min + 1) + min);
+    return random;
+};*/
+
 const e1a1 = () => {
   let month = new Date(Date.now()).toLocaleString("en", { month: "long" });
   console.log(month);
@@ -21,6 +26,35 @@ const e1a1 = () => {
     default:
       console.log("February has 28 days");
       break;
+  }
+};
+
+const e4a1 = () => {
+  let isGreen = false;
+
+  setInterval(() => {
+    isGreen = !isGreen;
+    if (isGreen) {
+      console.log("It's green");
+      console.log("Cross the road");
+    } else {
+      console.log("It's red");
+      console.log("Please wait");
+    }
+  }, 2000);
+};
+
+const e9a1 = () => {
+  let document = prompt("Introduzca su DNI/NIE");
+  let expresionRegularNie = /^[XT]\d{7}[A-Z]$/;
+  let expresionRegularDni = /^\d{8}[A-Z]$/;
+
+  if (expresionRegularDni.test(document)) {
+    console.log("El DNI es válido");
+  } else if (expresionRegularNie.test(document)) {
+    console.log("El NIE es válido");
+  } else {
+    console.log("introduzca un DNI/NIE válido");
   }
 };
 

@@ -146,7 +146,8 @@ e9a3 = () => {
     return decrypted;
   }
 
-  // Ya tenemos una función para cifrar y otra para descifrar. Ahora tenemos que crear una función con 2 parámetros. El primero para indicar si hay que cifrar o descifrar el mensaje (true or false). El segundo para el texto o mensaje.
+  // Ya tenemos una función para cifrar y otra para descifrar. Ahora tenemos que crear una función con 2 parámetros. 
+  // El primero para indicar si hay que cifrar o descifrar el mensaje (true or false). El segundo para el texto o mensaje.
 
   function cesarEncryption(cipher, message) {
     let result = "";

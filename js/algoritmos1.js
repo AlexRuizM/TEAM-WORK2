@@ -1,9 +1,9 @@
-/*const randomNumbers = (max, min) => {
-    let random = Math.floor(Math.random() * (max - min + 1) + min);
-    return random;
-};*/
+const randomNumbers = (max, min) => {
+  let random = Math.floor(Math.random() * (max - min + 1) + min);
+  return random;
+};
 
-/* Parte Criss */
+/* Ejercicio 1 */
 const e1a1 = () => {
   let month = new Date(Date.now()).toLocaleString("en", { month: "long" });
   console.log(month);
@@ -30,6 +30,7 @@ const e1a1 = () => {
   }
 };
 
+/* Ejercicio 4 */
 const e4a1 = () => {
   let isGreen = false;
 
@@ -45,43 +46,7 @@ const e4a1 = () => {
   }, 2000);
 };
 
-const e9a1 = () => {
-  let document = prompt("Introduzca su DNI/NIE");
-  let expresionRegularNie = /^[XT]\d{7}[A-Z]$/;
-  let expresionRegularDni = /^\d{8}[A-Z]$/;
-
-  if (expresionRegularDni.test(document)) {
-    console.log("El DNI es válido");
-  } else if (expresionRegularNie.test(document)) {
-    console.log("El NIE es válido");
-  } else {
-    console.log("introduzca un DNI/NIE válido");
-  }
-};
-
-const e6a1 = () => {
-  let email = "tolkien@lordofrings.com";
-  let password = "aNBR6ZeWPY";
-  let userEmail = prompt("Write here your email: ");
-  let userPassword = prompt("Write your password: ");
-
-  if (userEmail == email && userPassword == password) {
-    console.log("Welcome Mr.Tolkien");
-  } else {
-    console.log("Wrong password or email");
-  }
-};
-
-/* Parte Alex */
-/* Teniendo en cuenta las siguientes temperaturas:
-• Absolute Zero → -273.15°C
-• Freezing point → 0°C
-• Body Temperature → 37°C
-• Boiling point → 100°C
-Escribe un programa que convierta estas 
-temperaturas a Fahrenheit (mediante la estructura
-switch). ** Buscar la fórmula en Google** */
-
+/* Ejercicio 5 */
 const a1e5 = () => {
   function convertToFahrenheit(temperatura, escala) {
     switch (escala) {
@@ -102,14 +67,37 @@ const a1e5 = () => {
   convertToFahrenheit(37, "C");
   convertToFahrenheit(100, "C");
 };
-/* console.log(a1e5()); */
 
-/* Investiga el objeto Math, y genera 2 números aleatorios, 
-entre 1 y 6, para simular un juego de dados.
-Comprueba los resultados obtenidos y muestra 
-por consola el ganador. Por ejemplo: “Player 1
-wins!”, o “draw”, en caso de empate. */
+/* Ejercicio 6 */
+const e6a1 = () => {
+  let email = "tolkien@lordofrings.com";
+  let password = "aNBR6ZeWPY";
+  let userEmail = prompt("Write here your email: ");
+  let userPassword = prompt("Write your password: ");
 
+  if (userEmail == email && userPassword == password) {
+    console.log("Welcome Mr.Tolkien");
+  } else {
+    console.log("Wrong password or email");
+  }
+};
+
+/* Ejercicio 9 */
+const e9a1 = () => {
+  let document = prompt("Introduzca su DNI/NIE");
+  let expresionRegularNie = /^[XT]\d{7}[A-Z]$/;
+  let expresionRegularDni = /^\d{8}[A-Z]$/;
+
+  if (expresionRegularDni.test(document)) {
+    console.log("El DNI es válido");
+  } else if (expresionRegularNie.test(document)) {
+    console.log("El NIE es válido");
+  } else {
+    console.log("introduzca un DNI/NIE válido");
+  }
+};
+
+/* Ejercicio 10 */
 const a1e10 = () => {
   let num1 = randomNumbers(6, 1);
   let num2 = randomNumbers(6, 1);
@@ -123,5 +111,3 @@ const a1e10 = () => {
     console.log(`Jugador 2 GANASSSSSSS!`);
   }
 };
-/* console.log(a1e10()); */
-
